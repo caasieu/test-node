@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff; font-size:small;
+}
+
+button { cursor: pointer; }
+
+.holder {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: top;
+    padding: 15px;
+}
+
+.holder-title {
+    display: flex; flex-direction: row;
+    justify-content: left; align-items: center;
+}
+
+.holder-content {
+    min-width: 24rem; min-height: 90%;
+    border: 1px solid #ccc; padding: 10px;
+    border-radius: 5px;
+}
+
+.holder-top {
+    display: flex;
+
+}
+
+.holder-top .holder-create {
+    border: 1px solid #eee; border-radius: 5px;
+    display: flex; width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 2.5rem; align-items: center;
+    background-color: #eee;
+}
+
+.holder-top #input {
+    height: 100%; width: 70%; padding-left: 10px;
+    border: none; color: #000;
+    background-color: rgba(0,0,0,0); outline: none;
+    
+}
+
+.holder-top #create-btn {
+    background-color: rgb(16, 50, 202);
+    border: none; width: 30%; color: #fff;
+    height: 100%; border-radius: 5px;
+}
+
+
+/* Estilização de componentes do grupo de tarefas */
+.holder-body .list-group, .card-info {
+    display: flex; flex-direction: column;
+    gap: 5px;
+}
+
+.holder-body .list .card {
+    display: flex; flex-direction: column;
+    gap: 5px; background-color: #eee;
+    padding: 5px; border-radius: 5px;
+
+}
+
+
+.holder-body .list .card .card-status { 
+    position: relative; font-size: 8pt; color: white;
+    padding: 2px; padding-left: 10px; padding-right: 10px; border-radius: 5px; 
+    background-color: rgb(16, 202, 50); 
+}
+
+
+.holder-body .list .card .card-text {
+    padding-top: 5px; padding-bottom: 5px;
+}
+
+.holder-body .list .card .card-btns {
+    display: flex; flex-direction: row;
+    gap: 5px; 
+}
+
+.holder-body .list .card .card-btns button {
+    height: 25px; padding: 5px; padding-left: 10px; border-radius: 5px;
+    padding-right: 10px; border: none; color: white; font-size: 9pt;
+
+}
+
+.holder-body .list .card .card-btns #remover { background-color: rgb(202, 16, 50); }
+.holder-body .list .card .card-btns #finalizar { background-color: rgb(16, 202, 50); }

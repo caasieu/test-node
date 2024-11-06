@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title> Lista de tarefas em nodeJS </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+
+    <body>
+      <div class="holder">
+        <div class="holder-content">
+          <div class="holder-title">
+            <h3> Lista de tarefas em nodeJS </h3>
+          </div>
+          
+          <div class="holder-top">
+            <div class="holder-create">
+              <input type="text" id="input" placeholder="Coloque a tarefa aqui" />
+              <button id="create-btn"> Criar Tarefa </button>
+            </div>
+          </div>
+
+          <div class="holder-body">
+            <div class="list-group">
+              <div style="margin-top: 15px; text-align: center;">
+                <span> As minhas tarefas </span>
+              </div>
+
+              <div class="list">
+                <div class="card"> 
+                  <div class="card-info">
+                    <div style="display: flex;flex-direction: row;">
+                      <div class="card-status">
+                        <span id="status"> finalizado </span>
+                      </div>
+                    </div>
+
+                    <div class="card-text">
+                      <span>
+                        Aqui fica a tarefa...
+                      </span>
+                    </div>
+                  </div>
+
+                  <div class="card-btns">
+                    <button id="finalizar"> 
+                      finalizar
+                    </button>
+
+                    <button id="remover">
+                      remover tarefa
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="list-group">
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </body>
+</html>
